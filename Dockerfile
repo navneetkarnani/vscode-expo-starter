@@ -1,6 +1,6 @@
-# [Choice] Node.js version: 16, 14, 12
-ARG VARIANT=16-buster
-FROM node:${VARIANT}
+# [Choice] Node.js version: 16, 14
+# or others from https://hub.docker.com/_/node
+FROM node:16
 
 # remove old yarn
 RUN rm -rf /opt/yarn-v* /usr/local/bin/yarn /usr/local/bin/yarnpkg
