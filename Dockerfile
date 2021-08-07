@@ -11,7 +11,7 @@ RUN curl -fsSL https://starship.rs/install.sh
 # init for VS Code
 RUN mkdir -p /root/workspace /root/.vscode-server/extensions 
 
-# Install yarn eslint typescript expo
+# Install eslint typescript expo
 RUN npm install -g npm@latest
 RUN npm install -g eslint typescript expo-cli @expo/ngrok@^4.1.0
 RUN node --version && npm --version
