@@ -11,6 +11,7 @@ services:
       dockerfile: ./Dockerfile
     volumes:
       - code:/home/node/workspace
+      # https://code.visualstudio.com/docs/remote/containers-advanced#_avoiding-extension-reinstalls-on-container-rebuild
       - vs-server:/root/.vscode-server/extensions
 volumes:
   vs-server: {}
