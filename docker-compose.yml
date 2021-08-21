@@ -12,7 +12,7 @@ services:
     volumes:
       - code:/root/workspace
       # https://code.visualstudio.com/docs/remote/containers-advanced#_avoiding-extension-reinstalls-on-container-rebuild
-      - vs-server:/root/.vscode-server/extensions
+      - vs-server:/root/.vscode-server
 volumes:
   vs-server: {}
   code: {}
