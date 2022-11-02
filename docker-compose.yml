@@ -2,6 +2,7 @@ services:
   expo-dev:
     image: io.ghcr.navneetkarnani.vscode-expo-starter
     build:
+      context: .
       dockerfile: ./Dockerfile
     volumes:
       - code:/root/workspace
